@@ -1,0 +1,92 @@
+.features {
+  padding-top: 80px;
+  
+  .features-cont {
+    padding-top: 60px;
+  }
+
+  .features-item {
+    color: cl(white);
+    display: flex;
+    flex-flow: column-reverse;
+    @include overTab {
+    }
+    + .features-item {
+      padding-top: 60px;
+      @include overTab {
+        padding-top: 0;
+      }
+    }
+    &:nth-child(odd) {
+      @include overTab {
+        flex-flow: row-reverse;
+        // 左右入れ替え
+      }
+      .image {
+        @include overTab {
+          margin-right: 40px;
+        }
+      }
+      .text {
+        @include overTab {
+          margin-right: 40px;
+        }
+      }
+    }
+    &:nth-child(even) {
+      @include overTab {
+        flex-flow: row;
+      }
+      .image {
+        @include overTab {
+          margin-left: 40px;
+        }
+      }
+      .text {
+        @include overTab {
+          margin-left: 40px;
+        }
+      }
+    }
+    
+    .text {
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-top: 40px;
+      @include overTab {
+        flex: 1;
+        // 残りを埋めてくれる自動計算
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .ttl {
+      color: cl(baige);
+      font-size: 18px;
+      @include overTab {
+        font-size: 28px;
+      }
+    }
+    .desc {
+      font-size: 16px;
+      margin-top: 50px;
+      @include overTab {
+        font-size: 18px;
+      }
+    }
+    .image {
+      @include overTab {
+        width: percentage(640 / 1280);
+        // 全幅1280に対して640の画像
+      }
+    }
+  }
+  .features-link {
+    padding-top: 60px;
+    text-align: center;
+    a {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

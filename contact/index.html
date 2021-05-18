@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>極楽亭</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- slick-cssファイル読み込み -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- animate.css読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jquery読み込み -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick-jsファイル読み込み -->
+    <script src="/js/script.js"></script>
+    <!-- jsファイル読み込み -->
+    <script src="/js/wow.min.js"></script>
+    <!-- wow.min.js読み込み -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-fixed">
+        <h1 class="header-logo"><img src="/img/logo.png" alt="極楽亭"></h1>
+        <button class="nav-btn" id="nav-btn" type="button" aria-label="メニュー"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav header-nav" id="nav">
+        <nav class="nav-wrap">
+            <ul class="nav-list">
+                <li class="item"><a href="#">宿泊予約</a></li>
+                <li class="item"><a href="#">観光情報</a></li>
+                <li class="item"><a href="#">よくある質問</a></li>
+                <li class="item"><a href="/contact/">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <main class="contact">
+    <div class="cmn-mv"></div>
+    <div class="breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+        <li class="breadcrumb-item" aria-current="page">お問い合わせ</li>
+      </ol>
+    </div>
+
+    <div class="contact-section cmn-section">
+      <div class="formarea">
+        <h2 class="cmn-ttl">
+          <p class="main">お問い合わせ</p>
+          <span class="sub">Contact</span>
+        </h2>
+        <div class="contact-form">
+          <form action="" id="form">
+            <dl class="content">
+              <div class="row">
+                <dt><label for="company">会社名</label></dt>
+                <dd><input type="text" name="" id="company" placeholder="株式会社 京の極楽"></dd>
+              </div>
+              <div class="row">
+                <dt><label for="name">氏名</label></dt>
+                <dd><input type="text" name="" id="name" placeholder="山田 太郎"></dd>
+              </div><div class="row">
+                <dt><label for="mail">メールアドレス</label></dt>
+                <dd><input type="email" name="" id="email" placeholder="xxxxx@xxxx.com"></dd>
+              </div><div class="row">
+                <dt><label for="number">電話番号</label></dt>
+                <dd><input type="text" name="" id="number" placeholder="000-1234-5678"></dd>
+              </div><div class="row">
+                <dt><label for="contact">お問い合わせ内容</label></dt>
+                <dd>
+                  <textarea name="" class="textboxdata" placeholder="お問い合わせ内容を入力してください"></textarea>
+                </dd>
+              </div>
+            </dl>
+            <div class="privacy-policy">
+              <p><a href="#" class="link">プライバシーポリシー</a>に同意の上、送信してください</p>
+              <div class="checkbox">
+                <div class="check"><input type="checkbox" name="" id="agree" value=""></div>
+                <p>プライバシーポリシーに同意する</p>
+              </div>
+            </div>
+            <div class="submit-btn cmn-btn"><input type="submit" value="送信する"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="inner wow animate__animated animate__fadeIn">
+        <nav class="nav-wrap">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">利用規約</a></li>
+                <li class="nav-item"><a href="#">プライバシーポリシー</a></li>
+                <li class="nav-item"><a href="#">個人商取引法に基づく表記</a></li>
+                <li class="nav-item"><a href="/contact/">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="footer-logo"><img src="/img/logo.png" alt="極楽亭"></div>
+        <p class="copyright">Copyright (c) 2021 極楽亭 All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
