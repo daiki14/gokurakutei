@@ -699,7 +699,7 @@ main {
 }
 
 .top {
-  background-image: url(/img/top-mv_sp.png);
+  background-image: url(../img/top-mv_sp.png);
   background-position: center;
   background-size: cover;
   height: 674px;
@@ -709,7 +709,7 @@ main {
 
 @media print, screen and (min-width: 768px) {
   .top {
-    background-image: url(/img/top.png);
+    background-image: url(../img/top.png);
   }
 }
 
